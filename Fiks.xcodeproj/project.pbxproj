@@ -7,7 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79445A2D2798258F00B63C86 /* Linked list.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79445A2C2798258F00B63C86 /* Linked list.swift */; };
 		794BFBAD2796BE1600394C7F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794BFBAC2796BE1600394C7F /* main.swift */; };
+		7967BAA92796DD12004E0741 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7967BAA82796DD12004E0741 /* Error.swift */; };
+		7967BAAB2796DD8B004E0741 /* GetInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7967BAAA2796DD8B004E0741 /* GetInput.swift */; };
+		7967BAAD2796DDD7004E0741 /* DividingInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7967BAAC2796DDD7004E0741 /* DividingInput.swift */; };
+		7967BAAF27970F50004E0741 /* FindingSolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7967BAAE27970F50004E0741 /* FindingSolution.swift */; };
+		7967BAB127972F04004E0741 /* FindingCircleInGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7967BAB027972F04004E0741 /* FindingCircleInGraph.swift */; };
+		7976881027982B17008E36D6 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7976880F27982B17008E36D6 /* Window.swift */; };
+		7976881227982B39008E36D6 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7976881127982B39008E36D6 /* View.swift */; };
+		7976881427982BE2008E36D6 /* RunningTheAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7976881327982BE2008E36D6 /* RunningTheAlgorithm.swift */; };
+		79A1B0472799EC21005A0BE1 /* Pozemky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A1B0462799EC21005A0BE1 /* Pozemky.swift */; };
+		79BE85F4279846EA00E34969 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BE85F3279846EA00E34969 /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +34,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		79445A2C2798258F00B63C86 /* Linked list.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Linked list.swift"; sourceTree = "<group>"; };
 		794BFBA92796BE1600394C7F /* Fiks */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Fiks; sourceTree = BUILT_PRODUCTS_DIR; };
 		794BFBAC2796BE1600394C7F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		7967BAA82796DD12004E0741 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		7967BAAA2796DD8B004E0741 /* GetInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInput.swift; sourceTree = "<group>"; };
+		7967BAAC2796DDD7004E0741 /* DividingInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividingInput.swift; sourceTree = "<group>"; };
+		7967BAAE27970F50004E0741 /* FindingSolution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindingSolution.swift; sourceTree = "<group>"; };
+		7967BAB027972F04004E0741 /* FindingCircleInGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindingCircleInGraph.swift; sourceTree = "<group>"; };
+		7976880F27982B17008E36D6 /* Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
+		7976881127982B39008E36D6 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		7976881327982BE2008E36D6 /* RunningTheAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningTheAlgorithm.swift; sourceTree = "<group>"; };
+		79A1B0462799EC21005A0BE1 /* Pozemky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pozemky.swift; sourceTree = "<group>"; };
+		79BE85F3279846EA00E34969 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +80,51 @@
 			isa = PBXGroup;
 			children = (
 				794BFBAC2796BE1600394C7F /* main.swift */,
+				79A1B04B2799ECA9005A0BE1 /* PastSolutions */,
+				79A1B04C2799ECC4005A0BE1 /* HelpingThings-Datastructures and etc */,
+				79A1B0482799EC48005A0BE1 /* Vizualisation */,
 			);
 			path = Fiks;
+			sourceTree = "<group>";
+		};
+		79A1B0482799EC48005A0BE1 /* Vizualisation */ = {
+			isa = PBXGroup;
+			children = (
+				7976881127982B39008E36D6 /* View.swift */,
+				79BE85F3279846EA00E34969 /* Helpers.swift */,
+				7976880F27982B17008E36D6 /* Window.swift */,
+			);
+			path = Vizualisation;
+			sourceTree = "<group>";
+		};
+		79A1B04A2799EC91005A0BE1 /* byrokracie */ = {
+			isa = PBXGroup;
+			children = (
+				7976881327982BE2008E36D6 /* RunningTheAlgorithm.swift */,
+				7967BAB027972F04004E0741 /* FindingCircleInGraph.swift */,
+				7967BAAE27970F50004E0741 /* FindingSolution.swift */,
+				7967BAAC2796DDD7004E0741 /* DividingInput.swift */,
+			);
+			path = byrokracie;
+			sourceTree = "<group>";
+		};
+		79A1B04B2799ECA9005A0BE1 /* PastSolutions */ = {
+			isa = PBXGroup;
+			children = (
+				79A1B0462799EC21005A0BE1 /* Pozemky.swift */,
+				79A1B04A2799EC91005A0BE1 /* byrokracie */,
+			);
+			path = PastSolutions;
+			sourceTree = "<group>";
+		};
+		79A1B04C2799ECC4005A0BE1 /* HelpingThings-Datastructures and etc */ = {
+			isa = PBXGroup;
+			children = (
+				79445A2C2798258F00B63C86 /* Linked list.swift */,
+				7967BAA82796DD12004E0741 /* Error.swift */,
+				7967BAAA2796DD8B004E0741 /* GetInput.swift */,
+			);
+			path = "HelpingThings-Datastructures and etc";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,7 +185,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7967BAAD2796DDD7004E0741 /* DividingInput.swift in Sources */,
+				7967BAB127972F04004E0741 /* FindingCircleInGraph.swift in Sources */,
+				79445A2D2798258F00B63C86 /* Linked list.swift in Sources */,
+				7967BAAF27970F50004E0741 /* FindingSolution.swift in Sources */,
+				79BE85F4279846EA00E34969 /* Helpers.swift in Sources */,
+				7967BAA92796DD12004E0741 /* Error.swift in Sources */,
+				7976881227982B39008E36D6 /* View.swift in Sources */,
+				7967BAAB2796DD8B004E0741 /* GetInput.swift in Sources */,
 				794BFBAD2796BE1600394C7F /* main.swift in Sources */,
+				7976881027982B17008E36D6 /* Window.swift in Sources */,
+				7976881427982BE2008E36D6 /* RunningTheAlgorithm.swift in Sources */,
+				79A1B0472799EC21005A0BE1 /* Pozemky.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
