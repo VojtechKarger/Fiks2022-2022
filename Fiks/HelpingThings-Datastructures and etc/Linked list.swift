@@ -44,7 +44,7 @@ public class LinkedList<T> {
     }
     
     // 5. Update the append function to take in a value of type T
-    public func append(value: T) {
+    public func append(_ value: T) {
         let newNode = Node(value: value)
         size += 1
         if let tailNode = tail {
@@ -57,7 +57,7 @@ public class LinkedList<T> {
     }
     
     // 6. Update the nodeAt function to return a node constrained to type T
-    public func nodeAt(index: Int) -> Node<T>? {
+    public func node(at index: Int) -> Node<T>? {
         if index >= 0 {
             var node = head
             var i = index
@@ -77,13 +77,15 @@ public class LinkedList<T> {
     }
     
     // 7. Update the parameter of the remove function to take a node of type T. Update the return value to type T.
-    public func remove(node: Node<T>) -> T {
+    @discardableResult
+    public func remove(_ node: Node<T>) -> T {
         let prev = node.previous
         let next = node.next
         
         if size != 0 {
             size -= 1
         }
+        
         if let prev = prev {
             prev.next = next
         } else {
@@ -101,8 +103,18 @@ public class LinkedList<T> {
         return node.value
     }
     
+    //removes first value of the linked list and returns it
+    @discardableResult
+    public func popFirst() -> T? {
+        if size != 0 { size -= 1 }
+        let val = head?.value
+        head = head?.next
+        return val
+    }
     
     
+    
+    //like for each in array....
     public func forEach(_ action: (T) -> () ) {
         var node = head
         while node != nil {
@@ -115,7 +127,7 @@ public class LinkedList<T> {
 
 
 extension Array {
-    func linkedList<T>(_ linkedList: LinkedList<T>) -> Array<T>{
+    public static func linkedList<T>(_ linkedList: LinkedList<T>) -> Array<T>{
         var array: Array<Any> = Array(repeating: 0 as! Element, count: linkedList.size)
         var i = 0
         linkedList.forEach { j in

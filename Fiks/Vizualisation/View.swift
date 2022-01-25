@@ -202,7 +202,7 @@ class View: NSView {
             }
             current = n
             prevNum = from
-            completed.append(value: n)
+            completed.append(n)
             completedSet.insert(n)
         }
         sleep(5)

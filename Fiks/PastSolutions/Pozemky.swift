@@ -6,8 +6,6 @@
 //
 
 import Foundation
-  
-
 
 func pozemky() {
     
